@@ -1,0 +1,79 @@
+PROJECT BRIEFING
+1. Nama Proyek
+
+Sistem Pencatatan Penjualan Konter Pulsa Sederhana
+
+2. Latar Belakang
+
+Banyak konter pulsa kecil masih mencatat transaksi secara manual di buku atau bahkan hanya mengandalkan ingatan. Hal ini sering menyebabkan data penjualan hilang, sulit menghitung keuntungan, dan stok tidak terkontrol.
+
+3. Permasalahan Utama (Simpel)
+
+Pemilik konter tidak memiliki catatan penjualan harian
+Sulit mengetahui total pendapatan per hari
+Riwayat transaksi mudah hilang atau lupa
+Pencatatan manual memakan waktu
+Fokus hanya pada 1–2 proses inti, tidak kompleks.
+
+4. Tujuan Proyek
+
+Membuat sistem sederhana yang membantu pemilik konter:
+Mencatat setiap transaksi pulsa
+Melihat total penjualan harian
+Menyimpan data secara aman
+
+5. Solusi yang Ditawarkan
+
+Sebuah website pencatatan penjualan sederhana yang dapat:
+Menambahkan transaksi (nominal pulsa & harga)
+Menampilkan daftar transaksi hari ini
+Menampilkan total pendapatan
+
+6. Ruang Lingkup (Scope)
+
+✅ Termasuk:
+Input transaksi pulsa
+Daftar transaksi
+Total penjualan harian
+
+❌ Tidak termasuk:
+Manajemen stok
+Multi user
+Laporan bulanan
+Login admin
+Ini penting supaya proyek tetap simpel & realistis
+
+7. Target Pengguna
+
+Pemilik konter pulsa kecil
+Penjaga konter
+
+8. Fitur Utama
+
+Tambah Transaksi
+Nominal pulsa
+Harga jual
+Daftar Transaksi
+Tanggal
+Nominal
+Harga
+Total Penjualan Hari Ini
+
+9. Platform & Teknologi (Contoh)
+
+Platform: Website
+Frontend: HTML, CSS, JavaScript
+Backend: PHP / Node.js (opsional)
+Database: MySQL / Local Storage
+
+10. Output yang Diharapkan
+
+Website sederhana
+Data transaksi tersimpan
+Pemilik konter bisa melihat pendapatan harian
+
+11. Indikator Keberhasilan
+
+Transaksi berhasil disimpan
+Total penjualan tampil dengan benar
+Sistem mudah digunakan
