@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Konter Pulsa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <span class="logo-badge">Rp</span>
+          <span class="logo-text">KonterPulsa</span>
+        </div>
+      </header>
+
+      <!-- DASHBOARD -->
+      <section class="dashboard">
+        <div class="summary">
+          <div class="card">
+            <p>Penjualan Hari Ini</p>
+            <h2 id="total">Rp 0</h2>
+          </div>
+          <div class="card">
+            <p>Transaksi</p>
+            <h2 id="count">0</h2>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="openForm">+ Tambah Penjualan</button>
+
+        <div class="card">
+          <h3>Riwayat</h3>
+          <p class="empty-state" id="emptyHistory">
+            Belum ada transaksi.<br />
+            Tekan <strong>Tambah Penjualan</strong> untuk memulai.
+          </p>
+          <ul id="history"></ul>
+        </div>
+      </section>
+
+      <!-- FORM TAMBAH PENJUALAN -->
+      <section class="form hidden" id="formSection">
+        <h2>Tambah Penjualan</h2>
+
+        <label>Nominal</label>
+        <input
+          type="text"
+          id="nominal"
+          placeholder="Rp 0"
+          inputmode="numeric"
+        />
+        <small id="nominalPreview"></small>
+
+        <label>Provider</label>
+        <select id="provider">
+          <option>Telkomsel</option>
+          <option>XL</option>
+          <option>Axis</option>
+          <option>Indosat</option>
+        </select>
+
+        <div class="form-actions">
+          <button class="btn-secondary" id="cancelBtn">Batal</button>
+          <button class="btn-primary" id="saveBtn">Simpan</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
