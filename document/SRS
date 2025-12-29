@@ -1,0 +1,116 @@
+SOFTWARE REQUIREMENT SPECIFICATION (SRS)
+Sistem Pencatatan Penjualan Konter Pulsa Sederhana
+
+1. Pendahuluan
+
+1.1 Tujuan Dokumen
+Dokumen ini bertujuan untuk menjelaskan kebutuhan sistem dari aplikasi pencatatan penjualan konter pulsa sederhana agar dapat digunakan sebagai acuan pengembangan dan pengujian sistem.
+
+1.2 Ruang Lingkup Sistem
+Sistem ini digunakan untuk membantu pemilik konter pulsa dalam mencatat transaksi penjualan harian dan melihat total pendapatan tanpa proses yang kompleks.
+
+1.3 Definisi, Akronim, dan Singkatan
+Istilah	Penjelasan
+Transaksi	Data penjualan pulsa
+Admin	Pemilik konter
+Sistem	Aplikasi pencatatan penjualan
+
+2. Deskripsi Umum
+
+2.1 Perspektif Produk
+Sistem ini merupakan aplikasi berbasis website yang berdiri sendiri dan dapat dijalankan di browser tanpa integrasi dengan sistem lain.
+
+2.2 Fungsi Produk
+- Mencatat transaksi pulsa
+- Menampilkan daftar transaksi
+- Menampilkan total penjualan harian
+
+2.3 Karakteristik Pengguna
+- Pengguna memiliki kemampuan dasar menggunakan smartphone atau komputer
+- Tidak memiliki latar belakang teknis
+
+2.4 Batasan Sistem
+- Sistem hanya digunakan oleh satu pengguna
+- Tidak memiliki fitur login
+- Data hanya tersimpan secara lokal
+
+3. Kebutuhan Fungsional
+
+3.1 Kelola Transaksi
+Deskripsi:
+Sistem harus memungkinkan pengguna menambahkan transaksi baru.
+
+Kebutuhan:
+Sistem menyediakan form input transaksi
+Pengguna dapat menginput nominal pulsa
+Pengguna dapat menginput harga jual
+Sistem menyimpan data transaksi
+
+3.2 Menampilkan Daftar Transaksi
+Deskripsi:
+Sistem menampilkan daftar transaksi yang telah disimpan.
+
+Kebutuhan:
+Sistem menampilkan tanggal transaksi
+Sistem menampilkan nominal pulsa
+Sistem menampilkan harga jual
+
+3.3 Total Penjualan Harian
+
+Deskripsi:
+Sistem menghitung dan menampilkan total pendapatan hari ini.
+
+Kebutuhan:
+Sistem menjumlahkan semua harga jual
+Total ditampilkan secara otomatis
+
+4. Kebutuhan Non-Fungsional
+
+4.1 Usability
+- Sistem mudah digunakan
+- Tampilan sederhana dan jelas
+
+4.2 Performance
+- Penyimpanan transaksi kurang dari 10 detik
+- Tampilan data cepat
+
+4.3 Reliability
+- Data tidak hilang selama browser tidak dihapus
+
+4.4 Security
+- Sistem tidak memerlukan autentikasi
+- Tidak menyimpan data sensitif
+
+5. Kebutuhan Antarmuka
+
+5.1 Antarmuka Pengguna
+- Halaman utama
+total penjualan harian
+total transaksi harian
+data daftar transaksi
+
+- Halaman tambah penjualan
+Form input transaksi
+button simpan/batal
+
+5.2 Antarmuka Perangkat Keras
+- Smartphone
+- Laptop / PC
+
+6. Kebutuhan Data
+
+6.1 Struktur Data Transaksi
+Field	Tipe Data
+id	Integer
+tanggal	Date
+nominal_pulsa	String
+harga_jual	Integer
+
+7. Asumsi dan Ketergantungan
+- Browser mendukung JavaScript
+- Pengguna tidak menghapus cache browser
+
+8. Kriteria Penerimaan (Acceptance Criteria)
+- Pengguna dapat menambah transaksi
+- Transaksi tampil di daftar
+- Total penjualan sesuai data transaksi
