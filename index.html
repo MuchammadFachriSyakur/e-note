@@ -15,24 +15,42 @@
           <span class="logo-text">KonterPulsa</span>
         </div>
       </header>
-
       <!-- DASHBOARD -->
       <section class="dashboard">
         <div class="summary">
           <div class="card">
-            <p>Penjualan Hari Ini</p>
+            <p>Total Penjualan Hari Ini</p>
             <h2 id="total">Rp 0</h2>
           </div>
           <div class="card">
-            <p>Transaksi</p>
+            <p>Total Transaksi</p>
             <h2 id="count">0</h2>
           </div>
         </div>
-
         <button class="btn-primary" id="openForm">+ Tambah Penjualan</button>
-
         <div class="card">
-          <h3>Riwayat</h3>
+          <h3 class="history-title">
+            <span class="history-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12a9 9 0 1 0 3-6.7"></path>
+                <polyline points="3 4 3 10 9 10"></polyline>
+              </svg>
+            </span>
+            Riwayat
+          </h3>
+          <div class="history-filter">
+            <input type="date" id="filterDate" />
+            <button class="btn-secondary" id="resetFilter">Semua</button>
+          </div>
           <p class="empty-state" id="emptyHistory">
             Belum ada transaksi.<br />
             Tekan <strong>Tambah Penjualan</strong> untuk memulai.
@@ -40,11 +58,9 @@
           <ul id="history"></ul>
         </div>
       </section>
-
       <!-- FORM TAMBAH PENJUALAN -->
       <section class="form hidden" id="formSection">
         <h2>Tambah Penjualan</h2>
-
         <label>Nominal</label>
         <input
           type="text"
@@ -52,23 +68,19 @@
           placeholder="Rp 0"
           inputmode="numeric"
         />
-        <small id="nominalPreview"></small>
-
-        <label>Provider</label>
+        <small id="nominalPreview"></small> <label>Provider</label>
         <select id="provider">
           <option>Telkomsel</option>
           <option>XL</option>
           <option>Axis</option>
           <option>Indosat</option>
         </select>
-
         <div class="form-actions">
           <button class="btn-secondary" id="cancelBtn">Batal</button>
           <button class="btn-primary" id="saveBtn">Simpan</button>
         </div>
       </section>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
