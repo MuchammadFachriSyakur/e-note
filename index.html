@@ -2,96 +2,93 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Konter Pulsa</title>
-    <meta name="description" content="Deskripsi singkat website" />
+    <title>E-Nota – Aplikasi Pencatatan Penjualan Konter Pulsa</title>
+    <meta
+      name="description"
+      content="E-Nota adalah aplikasi pencatatan penjualan pulsa untuk konter kecil. Catat transaksi, pantau laporan harian, dan kelola penjualan dengan mudah."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO dasar -->
     <meta name="robots" content="index, follow" />
 
-    <!-- Social preview -->
-    <meta property="og:title" content="Nama Website" />
-    <meta property="og:description" content="Deskripsi website" />
+    <!-- Social Preview -->
+    <meta property="og:title" content="E-Nota – Konter Pulsa" />
+    <meta
+      property="og:description"
+      content="Aplikasi sederhana untuk mencatat penjualan dan laporan konter pulsa."
+    />
     <meta property="og:type" content="website" />
 
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/landing.css" />
   </head>
+
   <body>
-    <div class="app">
-      <!-- HEADER -->
-      <header class="header">
-        <div class="logo">
-          <span class="logo-badge">Rp</span>
-          <span class="logo-text">KonterPulsa</span>
-        </div>
-      </header>
-      <!-- DASHBOARD -->
-      <section class="dashboard">
-        <div class="summary">
-          <div class="card">
-            <p>Total Penjualan Hari Ini</p>
-            <h2 id="total">Rp 0</h2>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <div class="logo">
+            <span class="logo-badge">Rp</span>
+            <span class="logo-text">E-Nota</span>
           </div>
-          <div class="card">
-            <p>Total Transaksi</p>
-            <h2 id="count">0</h2>
-          </div>
-        </div>
-        <button class="btn-primary" id="openForm">+ Tambah Penjualan</button>
-        <div class="card">
-          <h3 class="history-title">
-            <span class="history-icon">
-              <svg
-                viewBox="0 0 24 24"
-                width="16"
-                height="16"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M3 12a9 9 0 1 0 3-6.7"></path>
-                <polyline points="3 4 3 10 9 10"></polyline>
-              </svg>
-            </span>
-            Riwayat
-          </h3>
-          <div class="history-filter">
-            <input type="date" id="filterDate" />
-            <button class="btn-secondary" id="resetFilter">Semua</button>
-          </div>
-          <p class="empty-state" id="emptyHistory">
-            Belum ada transaksi.<br />
-            Tekan <strong>Tambah Penjualan</strong> untuk memulai.
+
+          <h1>Sistem Pencatatan Penjualan Konter Pulsa</h1>
+          <p class="subtitle">
+            Catat transaksi harian, pantau laporan, dan kelola penjualan konter
+            pulsa dengan cara yang simpel dan cepat.
           </p>
-          <ul id="history"></ul>
+
+          <div class="hero-actions">
+            <a href="app.html" class="btn-primary">Masuk ke Aplikasi</a>
+            <a href="#fitur" class="btn-secondary">Lihat Fitur</a>
+          </div>
+        </div>
+
+        <div class="hero-mockup">
+          <div class="mockup-card">
+            <p class="mockup-title">Total Penjualan Hari Ini</p>
+            <h2>Rp 350.000</h2>
+            <p class="mockup-sub">12 transaksi</p>
+          </div>
         </div>
       </section>
-      <!-- FORM TAMBAH PENJUALAN -->
-      <section class="form hidden" id="formSection">
-        <h2>Tambah Penjualan</h2>
-        <label>Nominal</label>
-        <input
-          type="text"
-          id="nominal"
-          placeholder="Rp 0"
-          inputmode="numeric"
-        />
-        <small id="nominalPreview"></small> <label>Provider</label>
-        <select id="provider">
-          <option>Telkomsel</option>
-          <option>XL</option>
-          <option>Axis</option>
-          <option>Indosat</option>
-        </select>
-        <div class="form-actions">
-          <button class="btn-secondary" id="cancelBtn">Batal</button>
-          <button class="btn-primary" id="saveBtn">Simpan</button>
+
+      <section class="features" id="fitur">
+        <div class="card">
+          <h2>Pencatatan Penjualan</h2>
+          <p>Simpan setiap transaksi pulsa tanpa perlu buku catatan manual.</p>
+        </div>
+
+        <div class="card">
+          <h2>Riwayat Otomatis</h2>
+          <p>
+            Semua transaksi tersimpan otomatis dan bisa difilter per tanggal.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Laporan Harian</h2>
+          <p>
+            Lihat total penjualan dan jumlah transaksi konter dalam satu layar.
+          </p>
         </div>
       </section>
-    </div>
-    <script src="script.js"></script>
+
+      <section class="cta">
+        <h2>Kelola Konter Lebih Rapi Mulai Hari Ini</h2>
+        <p>
+          E-Nota membantu konter pulsa kecil mencatat penjualan dengan cepat dan
+          minim ribet.
+        </p>
+        <a href="app.html" class="btn-primary">Gunakan Sekarang</a>
+      </section>
+
+      <footer class="footer">
+        <p>
+          © <span id="year"></span> E-Nota — Aplikasi Konter Pulsa Sederhana
+        </p>
+      </footer>
+    </main>
+
+    <script src="js/landing.js"></script>
   </body>
 </html>

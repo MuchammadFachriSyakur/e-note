@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E-Nota – Aplikasi Pencatatan Penjualan Konter Pulsa</title>
+    <meta
+      name="description"
+      content="E-Nota adalah aplikasi pencatatan penjualan pulsa untuk konter kecil. Catat transaksi, lihat laporan harian, dan kelola penjualan dengan mudah."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO dasar -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Social preview -->
+    <meta property="og:title" content="E-Nota" />
+    <meta
+      property="og:description"
+      content="Sistem Pencatatan Penjualan Pulsa Sederhana"
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <span class="logo-badge">Rp</span>
+          <span class="logo-text">KonterPulsa</span>
+        </div>
+      </header>
+      <!-- DASHBOARD -->
+      <section class="dashboard">
+        <div class="summary">
+          <div class="card">
+            <p>Total Penjualan Hari Ini</p>
+            <h2 id="total">Rp 0</h2>
+          </div>
+          <div class="card">
+            <p>Total Transaksi</p>
+            <h2 id="count">0</h2>
+          </div>
+        </div>
+        <button class="btn-primary" id="openForm">+ Tambah Penjualan</button>
+        <div class="card">
+          <h3 class="history-title">
+            <span class="history-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12a9 9 0 1 0 3-6.7"></path>
+                <polyline points="3 4 3 10 9 10"></polyline>
+              </svg>
+            </span>
+            Riwayat
+          </h3>
+          <div class="history-filter">
+            <input type="date" id="filterDate" />
+            <button class="btn-secondary" id="resetFilter">Semua</button>
+          </div>
+          <p class="empty-state" id="emptyHistory">
+            Belum ada transaksi.<br />
+            Tekan <strong>Tambah Penjualan</strong> untuk memulai.
+          </p>
+          <ul id="history"></ul>
+        </div>
+      </section>
+      <!-- FORM TAMBAH PENJUALAN -->
+      <section class="form hidden" id="formSection">
+        <h2>Tambah Penjualan</h2>
+        <label>Nominal</label>
+        <input
+          type="text"
+          id="nominal"
+          placeholder="Rp 0"
+          inputmode="numeric"
+        />
+        <small id="nominalPreview"></small> <label>Provider</label>
+        <select id="provider">
+          <option>Telkomsel</option>
+          <option>XL</option>
+          <option>Axis</option>
+          <option>Indosat</option>
+        </select>
+        <div class="form-actions">
+          <button class="btn-secondary" id="cancelBtn">Batal</button>
+          <button class="btn-primary" id="saveBtn">Simpan</button>
+        </div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
