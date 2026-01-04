@@ -3,8 +3,7 @@
 Aplikasi web sederhana untuk membantu pemilik konter pulsa mencatat transaksi penjualan harian secara digital.  
 Dirancang untuk menggantikan pencatatan manual agar **lebih rapi, cepat, dan tidak mudah hilang**.
 
-🔗 **Live Demo**: https://USERNAME.github.io/konter-pulsa  
-(Ganti USERNAME dengan username GitHub kamu)
+🔗 **Live Demo**:
 
 ---
 
